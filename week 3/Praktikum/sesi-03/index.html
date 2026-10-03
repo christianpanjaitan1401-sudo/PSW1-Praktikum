@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Kegiatan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <figure>
+    <img src="Pintu_masuk_aula_berada_di_sisi_timur_gedung.jpg" alt="Pintu_masuk_aula_berada_di_sisi_timur_gedung">
+    <figcaption>Lokasi kegiatan: aula kampus.</figcaption>
+  </figure>
+
+  <main>
+    <h1>Pendaftaran Kegiatan</h1>
+    <p>Kolom bertanda wajib harus diisi.</p>
+    <form action="#" method="get">
+      <label for="nama">Nama lengkap (wajib)</label>
+      <input id="nama" autocomplete="name" required>
+
+      <label for="kode">Kode peserta (6 angka, wajib)</label>
+      <input id="kode" name="kode" type="text" inputmode="numeric" pattern="[0-9]{6}" aria-describedby="kode-help"
+        required>
+
+      <label for="email">Email (wajib)</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="telepon">Nomor telepon (wajib)</label>
+      <input id="telepon" name="telepon" type="tel" autocomplete="tel" required>
+
+      <label for="quantity">Jumlah tiket (1-5, wajib)</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+
+      <label for="prodi">Program studi (wajib)</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+
+      <fieldset>
+        <legend>Minat Topik</legend>
+        <input type="checkbox" id="Aksesibilitas" name="minat topik HTML dan Aksesibilitas1" value="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="minat topik HTML dan Aksesibilitas2" value="Aksesibilitas">
+        <label for="Aksesibilitas">Aksesibilitas</label>
+      </fieldset>
+      <fieldset>
+        <legend>Mode kehadiran (wajib)</legend>
+        <input id="luring" name="mode" type="radio" value="luring" required>
+        <label for="luring">Luring</label>
+        <input id="daring" name="mode" type="radio" value="daring">
+        <label for="daring">Daring</label>
+      </fieldset>
+      <label for="catatan">Catatan (opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+      <button type="submit">Daftar</button>
+    </form>
+  </main>
+</body>
+
+</html>
