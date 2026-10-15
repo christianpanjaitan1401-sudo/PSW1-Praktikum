@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <title>Halaman Pertama Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di situs saya
+        </h1>
+        <p>Halaman pertama Pengembangan Situs Web I.</p>
+    </header>
+    <main>
+        <h2>Profil Singkat</h2><img
+            src="Null.jpeg"
+            alt="The Void" width="400">
+        <p>The endless void</p>
+        <button type="button" id="greeting-button">Tampilkan salam</button>
+        <nav aria-label="Navigasi utama">
+            <ul class="nav-list">
+                <li><a href="#kegiatan">Kegiatan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <h1 id="kegiatan">Kegiatan Mahasiswa</h1>
+        <div class="catalog">
+            <article class="card">
+                <h2>Lokakarya HTML</h2>
+                <p>Belajar struktur.</p>
+                <a href="#">detail Lokakarya</a>
+            </article>
+            <article class="card">
+                <h2>Diskusi CSS</h2>
+                <p>Belajar tampilan.</p>
+                <a href="#">detail diskusi</a>
+            </article>
+            <article class="card">
+                <h2>Audit Web</h2>
+                <p>Menguji kualitas.</p>
+                <a href="#">detail web</a>
+            </article>
+            <article class="card">
+                <h2>Kuis Aksesibilitas</h2>
+                <p>Belajar struktur.</p>
+                <a href="#">detail kuis</a>
+            </article>
+            <article class="card">
+                <h2>Pendalaman CSS</h2>
+                <p>Penggunaan card.</p>
+                <a href="#">detail card</a>
+            </article>
+        </div>
+        <h1>Pendaftaran Kegiatan</h1>
+    <p>Kolom bertanda wajib harus diisi.</p>
+    <form action="#" method="get">
+      <label for="nama">Nama lengkap sesuai kartu identitas mahasiswa yang masih berlaku (wajib)</label>
+      <input id="nama" autocomplete="name" required>
+
+      <label for="email">Email (wajib)</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="prodi">Program studi (wajib)</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+
+      <br><label for="catatan">Catatan(opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+      <button type="submit">Daftar</button>
+    </form>
+    </main>
+    <footer id="kontak">Kontak: kegiatan@example.com</footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
