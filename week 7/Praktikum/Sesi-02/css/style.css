@@ -1,0 +1,122 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #6d3a04;
+    background: #f8c48e;
+}
+
+header,
+main {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(251, 243, 220);
+    border: 1px solid #000000;
+}
+
+h1 {
+    color: #df7b00;
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+}
+
+button {
+    padding: .75rem 1rem;
+    color: white;
+    background: #293d7a;
+    border: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: var(--space-2, 1rem);
+    transition: transform .2s ease;
+     min-width: 0;
+}
+
+.card h2 {
+    overflow-wrap: anywhere;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+}
+
+.card a {
+    align-self: start;
+}
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-wrap {
+    container-type: inline-size;
+}
+
+@container (min-width: 30rem) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+
+.card-wrap .card:hover,
+.card-wrap .card:focus-within {
+    transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}
+
+a[aria-current="page"] {
+    font-weight: bold;
+}
